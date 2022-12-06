@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 22px;
+}
+
+/* Header */
+
+.headercontainer {
+    font-family: 'Roboto', arial, sans-serif;
+    display: flex;
+    max-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 5;/*
+    margin-top: -5rem;*/
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Header Logo */
+
+.logocontainer {
+    max-width: 320px;
+    min-width: 200px;
+    display: flex;
+}
+
+.headerlogo {
+    display: flex;
+    width: 100%;
+}
+
+.headerlogo img{
+    height: 1.5rem;
+    width: 100%;
+}
+
+
+/* Header Nav Section */
+
+a {
+    text-decoration: underline;
+    color: #90AE2C;
+}
+
+.navcontainer {
+    max-width: 700px; 
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7rem;
+}
+
+#navtop,
+#navbottom {
+    display: flex;
+    white-space: nowrap;
+}
+
+#navtop > div,
+#navbottom > div {
+    margin: 2px;
+    line-height: 0.7rem;
+}
+
+.shrink {
+    flex-shrink: 1;
+}
+
+.noshrink {
+    border: 2px solid whitesmoke;
+    flex-shrink: 0;
+}
+
+.about {
+    width: 55px;
+}
+
+.programmes {
+    width: 118px;
+}
+
+.maintenance {
+    width: 116px;
+}
+
+.shop {
+    width: 48px;
+
+}
+
+.involved {
+    width: 117px;
+    flex-wrap: nowrap;
+}
+
+.media {
+    width: 52px;
+}
+
+.blog {
+    width: 48px;
+}
+
+.contact {
+    width: 106px;
+    flex-wrap: nowrap;
+}
+
+/* Split Header for Mobile */
+
+@media only screen and (max-width: 585px) {
+.headercontainer {
+    display: block;
+    }
+.abouthide {
+    display: none;
+    }
+.navcontainer {
+    width: 75%;
+    min-width: 0;
+    }
+}
+
+/*  BODY */
+
+.anchor {
+    padding-top: 2rem;
+}
+
+body {
+    border: 1px solid #90AE2C;
+    max-width: 1024px;
+    background-color: white;
+    font-family: 'Quicksand', Arial, sans-serif;
+}
+
+
+.welcomesection {
+    margin: 1rem 0 2rem 0;
+    border: 1px solid whitesmoke;
+}
+
+.section {
+    max-width: 1024px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.subheading {
+    color: #4E4C4C;
+    margin: 1rem 0 2rem 0;
+    line-height: 1.7rem;
+    text-align: center;
+}
+
+.title {
+    color: #90AE2C;
+    margin: 1rem;
+    font-size: 1rem;
+}
+
+.heading {
+    text-align: center;
+}
+
+.allmembers {
+    position: relative;
+    display: flex;
+    max-width: 1024px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.memberimage {
+    border: .2rem groove grey;
+    border-radius: .2rem;
+    height: 10rem;
+    width: 10rem;
+    margin: .1rem .4rem;
+}
+
+.memberimage img {
+    width: 100%;
+    height: 100%;
+}
+
+.biog {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 0.4rem;
+}
+
+.contenttitle,
+h3 {
+    font-size: 0.8rem;
+    color: #90AE2C;
+} 
+
+.content {
+    font-size: .8rem;
+}
+
+.allvideos {
+    position: relative;
+    display: flex;
+    max-width: 1024px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blogcontent {
+    font-size: .8rem;
+}
+
+.morelink {
+    font-family: 'Roboto', arial, sans-serif;
+    font-size: 0.5rem;
+}
+
+/* Welcome Section margin for Split Header for Mobil */
+
+@media only screen and (max-width: 585px) {
+    .welcomesection {
+        margin: 3rem 0 2rem 0;
+    }
+    .title,
+    .heading,
+    .content
+    .blogcontent {
+        font-size: 0.6rem;
+    }
+    .anchor {
+        padding-top: 4rem;
+    }
+}
