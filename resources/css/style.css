@@ -7,6 +7,11 @@ html {
     font-size: 22px;
 }
 
+body {
+    background-color: #DFE8C6;
+    max-width: 1024px;
+    margin: auto;
+}
 /* Header */
 
 .headercontainer {
@@ -16,8 +21,7 @@ html {
     width: 100%;
     height: auto;
     position: fixed;
-    z-index: 5;/*
-    margin-top: -5rem;*/
+    z-index: 5;/
     background-color: rgba(255, 255, 255, 0.9);
 }
 
